@@ -1,0 +1,34 @@
+import tkinter as tk
+from tkinter import ttk, messagebox
+import re
+import csv
+
+# Classe para Estilos Personalizados
+class Estilos:
+    def __init__(self):
+        self.estilo = ttk.Style()
+        self.estilo.configure("TButton", padding=5, width=20)
+        self.estilo.configure("TLabel", padding=5)
+        self.estilo.configure("TEntry", padding=5)
+
+# Classe da Aplicação
+class AplicacaoGerenciamentoFuncionarios:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Gerenciar Funcionários")
+
+        # Estilos Personalizados
+        self.estilos = Estilos()
+
+        # Chama a função para criar os widgets
+        self.criar_widgets()
+
+    # Função para criar os widgets
+    def criar_widgets(self):
+        # ... (Criação de widgets continua aqui)
+
+# Função Principal
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = AplicacaoGerenciamentoFuncionarios(root)
+    root.mainloop()
